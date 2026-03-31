@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "All Round Gothic";
+  src: url("/fonts/AllRoundGothic-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "All Round Gothic";
+  src: url("/fonts/AllRoundGothic-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  font-family: "Manrope", system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.045em;
+}
+
+::selection {
+  @apply bg-slate-900 text-white;
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
+  }
+
+  .logo-wordmark {
+    font-family: "All Round Gothic", system-ui, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 1;
+  }
+}

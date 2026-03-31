@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es-AR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Unio | Gestión Gastronómica de Próxima Generación</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#111827",
+              "on-primary": "#ffffff",
+              "surface": "#ffffff",
+              "on-surface": "#111827",
+              "on-surface-variant": "#4b5563",
+              "outline-variant": "#e5e7eb",
+              "background": "#ffffff",
+              "secondary": "#374151"
+            },
+            fontFamily: {
+              "headline": ["Inter", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              "DEFAULT": "0.375rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "2xl": "1rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #111827;
+            letter-spacing: -0.01em;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% -20%, #f3f4f6 0%, #ffffff 50%);
+        }
+        .glass-border {
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .subtle-shadow {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.04);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-slate-900 selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-gray-100">
+<div class="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
+<img alt="Unio" class="h-6 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uipLwTtTdMVpmWbxgma6CFEXySOb_GIHEPWlrWCiMa17_wzTg38b_mVhwqKslWo9fbV3aB4dTDHCbFShRcdKUKv8XaZNBH1Oo3M7rj8rB1RGkbNf4Iyb-bPlwF2jksVHfdRrdfKJyLuTnc77QejX-rnuNaxix5wKV7YBbp5bmeZypYxcGhpRxhbuNbzVV4izXlKARf47SBoVjV5ObOoHVKBqTXa4u0AYSliywRJsg17M71PIfs1ymBariL87Ss1WKfmthbjs2XW"/>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[13px] font-medium text-gray-900" href="#">Producto</a>
+<a class="text-[13px] font-medium text-gray-500 hover:text-gray-900 transition-colors" href="#">Módulos</a>
+<a class="text-[13px] font-medium text-gray-500 hover:text-gray-900 transition-colors" href="#">Precios</a>
+</div>
+<button class="bg-gray-900 text-white px-5 py-2 rounded-full text-[13px] font-medium hover:bg-gray-800 transition-all">
+            Solicitar Demo
+        </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="hero-gradient pt-48 pb-32 px-6 overflow-hidden">
+<div class="max-w-4xl mx-auto text-center space-y-10">
+<h1 class="text-6xl md:text-8xl font-bold tracking-tight text-gray-900 leading-[1.05]">
+                El sistema operativo de tu restaurante.
+            </h1>
+<p class="text-xl text-gray-500 max-w-xl mx-auto font-normal leading-relaxed">
+                Centralizá ventas, stock y finanzas. Control total, sin fricciones.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+<button class="bg-gray-900 text-white px-10 py-4 rounded-full font-medium text-sm hover:shadow-lg transition-all">Comenzar ahora</button>
+<button class="bg-white border border-gray-200 text-gray-900 px-10 py-4 rounded-full font-medium text-sm hover:bg-gray-50 transition-all">Ver Producto</button>
+</div>
+</div>
+<!-- Dashboard Mockup -->
+<div class="mt-32 max-w-6xl mx-auto relative group">
+<div class="absolute -inset-1 bg-gradient-to-b from-gray-100 to-transparent rounded-[2rem] blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative rounded-2xl overflow-hidden glass-border subtle-shadow bg-white">
+<img alt="Unio Dashboard" class="w-full h-auto grayscale-[20%] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7h4kiLOJ4DVBX55wL1oMc7Kp2LHwrlpA-PYH-XfUUgEuf7VFgosy2wu8oDFBo0LE_ThYDGoSLfpKoRonKSEXR2zG6Q013QLMKK2onZjI0p_vgrDEZzfFzdhaydeayqsVhZsGEd5PfibyDh_GaaCQ4fEoOLjAMaEryBNC_Cty_ifNzau_8_zCPVTJKzSbWX61eQa5KhuvfG0CC1WX0FbeLePOQTqaQIdYt0wbVwp5Tb42znjHRLdjgUm1AIxFNw1ZFkEcCBkIyGII"/>
+</div>
+</div>
+</section>
+<!-- Problems Section -->
+<section class="py-48 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-3 gap-24">
+<div class="space-y-6">
+<div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg">
+<span class="material-symbols-outlined text-gray-400" data-icon="account_tree">account_tree</span>
+</div>
+<h3 class="text-lg font-semibold tracking-tight">Arquitectura Unificada</h3>
+<p class="text-gray-500 leading-relaxed text-sm">Eliminá la fragmentación de datos. Una única fuente de verdad para toda tu operación.</p>
+</div>
+<div class="space-y-6">
+<div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg">
+<span class="material-symbols-outlined text-gray-400" data-icon="visibility">visibility</span>
+</div>
+<h3 class="text-lg font-semibold tracking-tight">Visibilidad Total</h3>
+<p class="text-gray-500 leading-relaxed text-sm">Información en tiempo real. Decisiones basadas en datos, no en intuiciones.</p>
+</div>
+<div class="space-y-6">
+<div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg">
+<span class="material-symbols-outlined text-gray-400" data-icon="auto_mode">auto_mode</span>
+</div>
+<h3 class="text-lg font-semibold tracking-tight">Automatización</h3>
+<p class="text-gray-500 leading-relaxed text-sm">Reducí errores operativos. Automatizá procesos manuales y escalá tu rentabilidad.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Modules Bento Grid -->
+<section class="py-48 bg-gray-50/50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-24 text-center">
+<h2 class="text-4xl font-bold tracking-tight">Módulos de alto rendimiento.</h2>
+<p class="text-gray-500 mt-4">Todo lo que necesitás, perfectamente integrado.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Dashboard Large -->
+<div class="md:col-span-2 bg-white p-12 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all flex flex-col justify-between overflow-hidden relative group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-gray-400 mb-6 block" data-icon="dashboard">dashboard</span>
+<h4 class="text-xl font-bold">Control Centralizado</h4>
+<p class="text-gray-500 mt-3 max-w-sm text-sm">Vista multi-sucursal en tiempo real. Gestión global desde un solo panel.</p>
+</div>
+<img class="mt-12 rounded-xl border border-gray-100 object-cover h-64 w-full grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Dashboard metrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD41alF79dGDN2PxdYvRsh4XDBHr15OLQDr5FpIzk9b-CnhB08l2Q4HW38NjDlHhpuLa4fGLPzcF8ZpZR92L_v59OOaZ-MYw__idpolRcfFZEt8tk5U3jfwtarJq6MMWketNRgdHdbvclEQrbMsq-3FS2ml8T8HRuLu_hfdkKiG7krEhbHuNTY9J_GHrC--dfVwxWPxX2O3kBedHb1mFBzaztunvCu_dMv-QJVCzLbRL8FYfW7X2oSXneD2nxYu4l0vAO5HV2QlX3s"/>
+</div>
+<!-- Inventario -->
+<div class="bg-white p-10 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all">
+<span class="material-symbols-outlined text-gray-400 mb-6 block" data-icon="inventory">inventory</span>
+<h4 class="text-xl font-bold">Inventario</h4>
+<p class="text-gray-500 mt-3 text-sm leading-relaxed">Control predictivo de stock y mermas. Suministros optimizados automáticamente.</p>
+</div>
+<!-- POS -->
+<div class="bg-white p-10 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all">
+<span class="material-symbols-outlined text-gray-400 mb-6 block" data-icon="shopping_cart">shopping_cart</span>
+<h4 class="text-xl font-bold">Ventas &amp; POS</h4>
+<p class="text-gray-500 mt-3 text-sm leading-relaxed">Sincronización instantánea con cocina y sistemas fiscales locales.</p>
+</div>
+<!-- AI Insights Black -->
+<div class="bg-gray-900 text-white p-10 rounded-2xl border border-transparent hover:shadow-2xl transition-all md:col-span-2 flex flex-col justify-center">
+<span class="material-symbols-outlined text-gray-400 mb-6 block" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="text-xl font-bold">Inteligencia Artificial</h4>
+<p class="text-gray-400 mt-3 max-w-md text-sm leading-relaxed">Análisis predictivo de demanda y optimización dinámica de márgenes mediante aprendizaje automático.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How it works -->
+<section class="py-48 max-w-7xl mx-auto px-6">
+<h2 class="text-4xl font-bold tracking-tight text-center mb-32">Implementación fluida.</h2>
+<div class="grid md:grid-cols-4 gap-16">
+<div class="space-y-4">
+<div class="text-[11px] font-bold text-gray-400 tracking-widest uppercase">01 / Integración</div>
+<h4 class="font-bold">Conexión</h4>
+<p class="text-gray-500 text-sm leading-relaxed">Migramos tus datos actuales de forma segura y sin interrupciones.</p>
+</div>
+<div class="space-y-4">
+<div class="text-[11px] font-bold text-gray-400 tracking-widest uppercase">02 / Estructura</div>
+<h4 class="font-bold">Unificación</h4>
+<p class="text-gray-500 text-sm leading-relaxed">Toda tu operativa converge en una arquitectura central única.</p>
+</div>
+<div class="space-y-4">
+<div class="text-[11px] font-bold text-gray-400 tracking-widest uppercase">03 / Análisis</div>
+<h4 class="font-bold">Inteligencia</h4>
+<p class="text-gray-500 text-sm leading-relaxed">Generación de reportes dinámicos sobre el rendimiento real.</p>
+</div>
+<div class="space-y-4">
+<div class="text-[11px] font-bold text-gray-400 tracking-widest uppercase">04 / Escala</div>
+<h4 class="font-bold">Expansión</h4>
+<p class="text-gray-500 text-sm leading-relaxed">Crecimiento estratégico basado en métricas de precisión.</p>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-48 px-6">
+<div class="max-w-6xl mx-auto bg-gray-900 rounded-[2.5rem] p-20 md:p-32 text-center space-y-12 relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(255,255,255,0.1),transparent)] pointer-events-none"></div>
+<h2 class="text-5xl md:text-7xl font-bold tracking-tight text-white relative z-10">
+                El futuro es hoy.
+            </h2>
+<p class="text-xl text-gray-400 max-w-xl mx-auto relative z-10 font-light">
+                Únete a los líderes gastronómicos que ya operan con Unio.
+            </p>
+<div class="relative z-10 pt-4">
+<button class="bg-white text-gray-900 px-12 py-5 rounded-full font-bold text-sm hover:scale-105 transition-all">Solicitar Acceso</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white py-24 border-t border-gray-100 text-[13px]">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-start gap-16">
+<div class="space-y-6">
+<img alt="Unio" class="h-5 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uipLwTtTdMVpmWbxgma6CFEXySOb_GIHEPWlrWCiMa17_wzTg38b_mVhwqKslWo9fbV3aB4dTDHCbFShRcdKUKv8XaZNBH1Oo3M7rj8rB1RGkbNf4Iyb-bPlwF2jksVHfdRrdfKJyLuTnc77QejX-rnuNaxix5wKV7YBbp5bmeZypYxcGhpRxhbuNbzVV4izXlKARf47SBoVjV5ObOoHVKBqTXa4u0AYSliywRJsg17M71PIfs1ymBariL87Ss1WKfmthbjs2XW"/>
+<p class="text-gray-400 max-w-xs">Tecnología de gestión para la industria gastronómica de alto nivel.</p>
+<p class="text-gray-400">© 2024 Unio. Todos los derechos reservados.</p>
+</div>
+<div class="flex gap-16">
+<div class="space-y-4">
+<h5 class="font-semibold text-gray-900">Legal</h5>
+<ul class="space-y-2 text-gray-500">
+<li><a class="hover:text-gray-900 transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-gray-900 transition-colors" href="#">Términos</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-semibold text-gray-900">Compañía</h5>
+<ul class="space-y-2 text-gray-500">
+<li><a class="hover:text-gray-900 transition-colors" href="#">Contacto</a></li>
+<li><a class="hover:text-gray-900 transition-colors" href="#">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
