@@ -24,7 +24,7 @@ const variants = {
 };
 
 const baseClassName =
-  "inline-flex items-center justify-center rounded-[1.15rem] px-6 py-3.5 text-sm font-semibold tracking-[-0.03em] transition duration-200";
+  "inline-flex items-center justify-center rounded-[1.15rem] px-6 py-3.5 text-base font-semibold tracking-[-0.03em] transition duration-200";
 
 export function Button(props: ButtonProps | LinkProps) {
   if ("href" in props) {
