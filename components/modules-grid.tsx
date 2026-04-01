@@ -40,7 +40,7 @@ export function ModulesGrid() {
                 <span className="whitespace-nowrap">
                   tener{" "}
                   <TextRotate
-                    texts={["control", "claridad", "certeza", "tranquilidad", "dirección", "tiempo"]}
+                    texts={["control", "claridad", "certeza", "orden", "foco", "dirección", "tiempo"]}
                     rotationInterval={2500}
                     mainClassName="text-[#1B3A5C] inline-flex whitespace-nowrap"
                     staggerFrom="last"
