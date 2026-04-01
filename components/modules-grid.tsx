@@ -39,7 +39,7 @@ export function ModulesGrid() {
                 <TextRotate
                   texts={["control", "claridad", "certeza", "tranquilidad", "dirección", "tiempo"]}
                   rotationInterval={2500}
-                  mainClassName="text-[#1B3A5C] inline-flex"
+                  mainClassName="text-[#1B3A5C] inline-flex whitespace-nowrap"
                   staggerFrom="last"
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
