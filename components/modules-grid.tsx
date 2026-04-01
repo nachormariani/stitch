@@ -35,19 +35,22 @@ export function ModulesGrid() {
             eyebrow="Producto"
             title={
               <>
-                Lo que necesitás para tener{" "}
-                <TextRotate
-                  texts={["control", "claridad", "certeza", "tranquilidad", "dirección", "tiempo"]}
-                  rotationInterval={2500}
-                  mainClassName="text-[#1B3A5C] inline-flex whitespace-nowrap"
-                  staggerFrom="last"
-                  initial={{ y: "100%" }}
-                  animate={{ y: 0 }}
-                  exit={{ y: "-120%" }}
-                  staggerDuration={0.025}
-                  splitLevelClassName="overflow-hidden"
-                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                />
+                Lo que necesitás para{" "}
+                <span className="whitespace-nowrap">
+                  tener{" "}
+                  <TextRotate
+                    texts={["control", "claridad", "certeza", "tranquilidad", "dirección", "tiempo"]}
+                    rotationInterval={2500}
+                    mainClassName="text-[#1B3A5C] inline-flex whitespace-nowrap"
+                    staggerFrom="last"
+                    initial={{ y: "100%" }}
+                    animate={{ y: 0 }}
+                    exit={{ y: "-120%" }}
+                    staggerDuration={0.025}
+                    splitLevelClassName="overflow-hidden"
+                    transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  />
+                </span>
               </>
             }
             description="Cada bloque te da más claridad y menos trabajo manual."
