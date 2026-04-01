@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="overflow-hidden bg-hero-radial pb-16 pt-40 sm:pb-20 sm:pt-44">
+    <section className="flex min-h-screen flex-col justify-center overflow-hidden bg-hero-radial pt-20">
       <Container>
         <div className="mx-auto max-w-5xl text-center">
           <h1 className="text-balance text-5xl font-extrabold leading-[0.94] tracking-[-0.06em] text-foreground sm:text-6xl lg:text-8xl">
