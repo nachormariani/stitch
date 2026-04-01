@@ -5,6 +5,7 @@ type SectionHeadingProps = {
   title: ReactNode;
   description?: string;
   centered?: boolean;
+  containerClassName?: string;
 };
 
 export function SectionHeading({
@@ -12,9 +13,11 @@ export function SectionHeading({
   title,
   description,
   centered = false,
+  containerClassName,
 }: SectionHeadingProps) {
+  const defaultWidth = containerClassName ?? "max-w-3xl";
   return (
-    <div className={centered ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
+    <div className={centered ? `mx-auto ${defaultWidth} text-center` : defaultWidth}>
       {eyebrow ? (
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-400">
           {eyebrow}

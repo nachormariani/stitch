@@ -32,6 +32,7 @@ export function ModulesGrid() {
         <LayoutGroup>
           <SectionHeading
             centered
+            containerClassName="max-w-none"
             eyebrow="Producto"
             title={
               <>
