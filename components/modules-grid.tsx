@@ -1,7 +1,9 @@
 import type { ReactNode } from "react";
+import { LayoutGroup } from "motion/react";
 import { Container } from "@/components/container";
 import { BoxIcon, CartIcon, DashboardIcon, SparkIcon } from "@/components/icons";
 import { SectionHeading } from "@/components/section-heading";
+import { TextRotate } from "@/components/ui/text-rotate";
 
 type CardProps = {
   title: string;
@@ -27,12 +29,30 @@ export function ModulesGrid() {
   return (
     <section id="modulos" className="bg-surfaceAlt/70 py-24 sm:py-32">
       <Container>
-        <SectionHeading
-          centered
-          eyebrow="Producto"
-          title="Lo que necesitás para tener control."
-          description="Cada bloque te da más claridad y menos trabajo manual."
-        />
+        <LayoutGroup>
+          <SectionHeading
+            centered
+            eyebrow="Producto"
+            title={
+              <>
+                Lo que necesitás para tener{" "}
+                <TextRotate
+                  texts={["control", "claridad", "certeza", "tranquilidad", "dirección", "tiempo"]}
+                  rotationInterval={2500}
+                  mainClassName="text-[#1B3A5C] inline-flex"
+                  staggerFrom="last"
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-hidden"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                />
+              </>
+            }
+            description="Cada bloque te da más claridad y menos trabajo manual."
+          />
+        </LayoutGroup>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           <ModuleCard
